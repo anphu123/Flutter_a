@@ -68,22 +68,16 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget buildRecipeCard(Recipe recipe) {
     return Card(
-      // 1
       elevation: 2.0,
-      // 2
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-      // 3
       child: Padding(
         padding: const EdgeInsets.all(16.0),
-        // 4
         child: Column(
           children: <Widget>[
             Image(image: AssetImage(recipe.hinh)),
-            // 5
             const SizedBox(
               height: 14.0,
             ),
-            // 6
             Text(
               recipe.ten,
               style: const TextStyle(
