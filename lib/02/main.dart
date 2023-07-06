@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'recipe_detail.dart';
-import 'recipe.dart';//nếu khai báo bằng R dòng số 56 sẽ lỗi
+import 'recipe.dart'; //nếu khai báo bằng R dòng số 56 sẽ lỗi
 
 void main() {
   runApp(const RecipeApp());
