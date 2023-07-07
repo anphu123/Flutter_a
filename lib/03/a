@@ -1,0 +1,18 @@
+Trong Flutter, Scaffold là một widget quan trọng và phổ biến để xây dựng giao diện người dùng (UI). Nó cung cấp cấu trúc chung cho các thành phần giao diện như thanh
+tiêu đề (app bar), nội dung chính (body), hộp thoại (dialogs), menu điều hướng (navigation drawer),
+và nhiều thành phần khác. Dưới đây là một số thành phần quan trọng trong Scaffold:
+
+App bar: Được đặt bằng thuộc tính appBar, cho phép bạn hiển thị một thanh tiêu đề ở đầu trang. Thanh tiêu đề có thể chứa tiêu đề, nút điều hướng và các thành phần khác.
+
+Body: Được đặt bằng thuộc tính body, cho phép bạn định nghĩa nội dung chính của màn hình. Đây là nơi để đặt các widget như danh sách, hình ảnh, biểu mẫu và nhiều loại widget khác.
+
+Floating action button: Được đặt bằng thuộc tính floatingActionButton, cho phép bạn thêm một nút hành động phản hồi cho tác động người dùng, ví dụ như thêm dữ liệu mới.
+
+Bottom navigation bar: Được đặt bằng thuộc tính bottomNavigationBar, cho phép bạn hiển thị một thanh điều hướng ở cuối trang, cho phép người dùng chuyển đổi giữa các mục
+ khác nhau trong ứng dụng.
+
+Drawer: Được đặt bằng thuộc tính drawer, cho phép bạn thêm một menu điều hướng dọc bên trái hoặc phải của màn hình.
+
+Snackbars: Scaffold cung cấp phương thức showSnackBar() để hiển thị các thông báo ngắn tạm thời ở dưới cùng của màn hình.
+
+Floating action button extended: Scaffold cung cấp thuộc tính floatingActionButtonLocation và floatingActionButtonAnimator để tùy chỉnh vị trí và hiệu ứng của FloatingActionButton.
