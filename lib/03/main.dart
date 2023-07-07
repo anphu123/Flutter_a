@@ -1,13 +1,38 @@
 import 'package:flutter/material.dart';
 
-void main (){
-  runApp(BcApp());
+void main() {
+  runApp(const Fooderlich());
 }
-class BcApp extends StatelessWidget {
-  const BcApp8({super.key});
+
+class Fooderlich extends StatelessWidget {
+  const Fooderlich({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    // TODO: Create theme
+
+    // TODO: Apply Home widget
+    return MaterialApp(
+      // TODO: Add theme
+    
+      title: 'Fooderlich',
+      home: Scaffold(
+        appBar: AppBar(
+            title: const Text(
+          'Fooderlich',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 20,
+          ),
+        )),
+        body: const Center(
+            // TODO: Style the title
+            child: Text(
+          'Let\'s get cooking 👩‍🍳',
+          // TODO: Style the body text
+          style: TextStyle(color: Colors.black54),
+        )),
+      ),
+    );
   }
 }
