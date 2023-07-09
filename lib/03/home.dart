@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled2/03/card2.dart';
+import 'package:untitled2/03/card3.dart';
 import 'card1.dart';
 
 class Home extends StatefulWidget {
@@ -19,7 +20,7 @@ class _HomeState extends State<Home> {
     // TODO: Replace with Card2
     const Card2(),
     // TODO: Replace with Card3
-    Container(color: Colors.blue)
+    const Card3(),
   ];
 
   void _onItemTapped(int index) {
