@@ -29,7 +29,7 @@ class Card3 extends StatelessWidget {
             AuthorCard(
               authorName: 'Mike Katz',
               title: 'Smoothie Connoisseur',
-              imageProvider: AssetImage('assets/mag5.png'),
+              imageProvider: AssetImage('assets/author_katz.jpeg'),
             ),
 
             // TODO: Add Positioned text
