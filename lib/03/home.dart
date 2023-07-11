@@ -35,14 +35,20 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text(
           'Fooderlich home',
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme
+              .of(context)
+              .textTheme
+              .headline6,
         ),
       ),
       // TODO: Show selected tab
       body: pages[_selectedIndex],
       // TODO: Add bottom navigation bar
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Theme.of(context).textSelectionTheme.selectionColor,
+        selectedItemColor: Theme
+            .of(context)
+            .textSelectionTheme
+            .selectionColor,
         // TODO: Set selected tab bar
         // 10
         currentIndex: _selectedIndex,
