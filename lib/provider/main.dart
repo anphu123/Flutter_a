@@ -4,7 +4,7 @@ import 'basic.dart';
 import 'demo_change_notifier.dart';
 import 'demo_future_provider.dart';
 import 'demo_multiple_provider.dart';
-import 'demo_value_listenable_provider.dart';
+
 void main(){
   runApp(MyApp());
 }
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('demo1 provider'),
         ),
-        body: DemoValueListenableProvider(),
+        body: DemoMultipleProvider(),
       ),
     );
   }
