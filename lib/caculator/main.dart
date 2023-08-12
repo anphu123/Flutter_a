@@ -70,7 +70,7 @@ import 'calculator_state.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
+    ChangeNotifierProvider(// Cung cấp CalculatorState cho ứng dụng
       create: (context) => CalculatorState(),
       child:  MyApp(),
     ),

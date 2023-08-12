@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-
+// Lớp này định nghĩa CalculatorState sử dụng ChangeNotifier để quản lý trạng thái
 class CalculatorState extends ChangeNotifier {
-  double _result = 0;
-  String _currentValue = '';
-  String _currentOperator = '';
+  double _result = 0;// Lưu kết quả hiện tại
+  String _currentValue = '';// Lưu giá trị đầu vào hiện tại
+  String _currentOperator = '';// Lưu toán tử hiện tại
 
   double get result => _result;
   String get currentValue => _currentValue;
