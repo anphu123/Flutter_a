@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(8),
                           child: Icon(
                             Icons.person,
                             color: Colors.white,
@@ -43,24 +43,30 @@ class HomeScreen extends StatelessWidget {
                         SizedBox(
                           width: 8,
                         ),
-                        Expanded(
-                          child: TextField(
-                            // TODO  tạo edittext
-                            decoration: InputDecoration(
-                                border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.only(
-                                        topRight: Radius.circular(10),
-                                        bottomRight: Radius.circular(10))),
-                                fillColor: Colors.white,
-                                filled: true,
-                                hintText: "User name",
-                                hintStyle: TextStyle(
-                                  fontSize: 15,
-                                )),
-                            cursorColor: Colors.red,
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: Colors.black,
+                        Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.only(
+                                  topRight: Radius.circular(10),
+                                  bottomRight: Radius.circular(10))),
+                          width: 250,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8),
+                            child: TextField(
+                              // TODO  tạo edittext
+                              decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  hintText: "User name",
+                                  hintStyle: TextStyle(
+                                    fontSize: 15,
+                                  )),
+                              cursorColor: Colors.red,
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.black,
+                              ),
                             ),
                           ),
                         ),
