@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:untitled2/loginpage/Ui/CustomInputfield.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -17,6 +19,7 @@ class HomeScreen extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         color: Colors.blue,
+
         child: Center(
           child: Container(
             width: 400,
@@ -24,53 +27,30 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Container(
-                  width: 300,
-                  child: Material(
-                    elevation: 5,
-                    color: Colors.deepOrange,
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8),
-                          child: Icon(
-                            Icons.person,
-                            color: Colors.white,
-                          ),
-                        ), //tạo icon
-                        SizedBox(
-                          width: 8,
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.only(
-                                  topRight: Radius.circular(10),
-                                  bottomRight: Radius.circular(10))),
-                          width: 250,
-                          child: Padding(
-                            padding: const EdgeInsets.all(8),
-                            child: TextField(
-                              // TODO  tạo edittext
-                              decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  fillColor: Colors.white,
-                                  filled: true,
-                                  hintText: "User name",
-                                  hintStyle: TextStyle(
-                                    fontSize: 15,
-                                  )),
-                              cursorColor: Colors.red,
-                              style: TextStyle(
-                                fontSize: 20,
-                                color: Colors.black,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
+                CustomInputField(
+                    Icon(
+                      Icons.person,
+                      color: Colors.white,
+                    ),
+                    "user name"),
+                Padding(
+                  padding: const EdgeInsets.only(top: 20.0),
+                  child: CustomInputField(
+                      Icon(Icons.lock, color: Colors.white), "pass"),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 15.0),
+                  child: SizedBox(
+                    width: 100,
+                    height: 40,
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text(
+                        "Login",
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.deepOrange, elevation: 20,shadowColor: Colors.deepOrange),
                     ),
                   ),
                 )
