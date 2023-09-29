@@ -19,44 +19,54 @@ class HomeScreen extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         color: Colors.blue,
-
-        child: Center(
-          child: Container(
-            width: 400,
-            height: 400,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                CustomInputField(
-                    Icon(
-                      Icons.person,
-                      color: Colors.white,
-                    ),
-                    "user name"),
-                Padding(
-                  padding: const EdgeInsets.only(top: 20.0),
-                  child: CustomInputField(
-                      Icon(Icons.lock, color: Colors.white), "pass"),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 15.0),
-                  child: SizedBox(
-                    width: 100,
-                    height: 40,
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Login",
-                        style: TextStyle(color: Colors.white, fontSize: 20),
-                      ),
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.deepOrange, elevation: 20,shadowColor: Colors.deepOrange),
-                    ),
-                  ),
-                )
-              ],
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 100),
+              margin: EdgeInsets.only(top:100)
+              child: Text("XIN MOI DANG NHAP",style: TextStyle(color: Colors.red,fontSize: 20),),
             ),
-          ),
+            Center(
+              child: Container(
+                width: 400,
+                height: 400,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    CustomInputField(
+                        Icon(
+                          Icons.person,
+                          color: Colors.white,
+                        ),
+                        "user name"),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: CustomInputField(
+                          Icon(Icons.lock, color: Colors.white), "pass"),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 15.0),
+                      child: SizedBox(
+                        width: 100,
+                        height: 40,
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Login",
+                            style: TextStyle(color: Colors.white, fontSize: 20),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.deepOrange,
+                              elevation: 20,
+                              shadowColor: Colors.deepOrange),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
