@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 100),
-              margin: EdgeInsets.only(top:100)
+              padding: EdgeInsets.only(top:100),
               child: Text("XIN MOI DANG NHAP",style: TextStyle(color: Colors.red,fontSize: 20),),
             ),
             Center(
