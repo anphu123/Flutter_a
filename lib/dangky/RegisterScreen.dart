@@ -24,7 +24,7 @@ class RegistrationForm extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController confirmPasswordController =
-      TextEditingController();
+  TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -34,32 +34,50 @@ class RegistrationForm extends StatelessWidget {
         children: [
           TextFormField(
             controller: nameController,
-            decoration: InputDecoration(labelText: 'Tên'),
+            decoration: InputDecoration(
+              labelText: 'Tên',
+              icon: Icon(Icons.person),
+            ),
           ),
           TextFormField(
             controller: ageController,
-            decoration: InputDecoration(labelText: 'Tuổi'),
+            decoration: InputDecoration(
+              labelText: 'Tuổi',
+              icon: Icon(Icons.accessibility),
+            ),
           ),
           TextFormField(
             controller: phoneController,
-            decoration: InputDecoration(labelText: 'Số Điện Thoại'),
+            decoration: InputDecoration(
+              labelText: 'Số Điện Thoại',
+              icon: Icon(Icons.phone),
+            ),
           ),
           TextFormField(
             controller: emailController,
-            decoration: InputDecoration(labelText: 'Email'),
+            decoration: InputDecoration(
+              labelText: 'Email',
+              icon: Icon(Icons.email),
+            ),
           ),
           TextFormField(
             controller: passwordController,
-            decoration: InputDecoration(labelText: 'Mật Khẩu'),
+            decoration: InputDecoration(
+              labelText: 'Mật Khẩu',
+              icon: Icon(Icons.lock),
+            ),
           ),
           TextFormField(
             controller: confirmPasswordController,
-            decoration: InputDecoration(labelText: 'Xác Nhận Mật Khẩu'),
+            decoration: InputDecoration(
+              labelText: 'Xác Nhận Mật Khẩu',
+              icon: Icon(Icons.lock),
+            ),
           ),
           ElevatedButton(
             onPressed: () {
               RegistrationProvider provider =
-                  Provider.of<RegistrationProvider>(context, listen: false);
+              Provider.of<RegistrationProvider>(context, listen: false);
               String name = nameController.text;
               String age = ageController.text;
               String phone = phoneController.text;
@@ -102,9 +120,12 @@ class RegistrationForm extends StatelessWidget {
           Consumer<RegistrationProvider>(
             builder: (context, provider, child) {
               if (provider.error != null) {
-                return Text(
-                  provider.error!,
-                  style: TextStyle(color: Colors.red),
+                return Padding(
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: Text(
+                    provider.error!,
+                    style: TextStyle(color: Colors.red),
+                  ),
                 );
               } else {
                 return Container();
